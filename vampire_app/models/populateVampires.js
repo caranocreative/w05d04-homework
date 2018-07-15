@@ -135,6 +135,6 @@ const vampire = [
     gender: 'm',
     title: 'Osiris of Sewer Rats'
   }
-]
+];
 
-module.exports = mongoose.model('vampire', vampireSchema);
+//module.exports = mongoose.model('vampire', vampireSchema);
