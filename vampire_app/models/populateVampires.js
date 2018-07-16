@@ -1,5 +1,5 @@
-const vampire = [
-  {
+//const vampire = [
+ db.vampires.insert({
     name: 'Count Chocula',
     hair_color: 'brown',
     eye_color: 'brown',
@@ -8,7 +8,9 @@ const vampire = [
     location: 'Minneapolis, Minnesota, US',
     gender: 'm',
     victims: 2
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Dracula',
     dob: new Date(937, 0, 24, 13, 0),
     hair_color: 'brown',
@@ -17,7 +19,9 @@ const vampire = [
     location: 'Transylvania, Romania',
     gender: 'm',
     victims: 1238
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Elizabeth Bathory ',
     dob: new Date(1560, 8, 7, 22, 10),
     hair_color: 'brown',
@@ -26,7 +30,9 @@ const vampire = [
     location: 'Nyírbátor, Hungary',
     gender: 'f',
     victims: 980
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Lestat',
     dob: new Date(1760, 11, 9, 18, 44),
     hair_color: 'blonde',
@@ -35,7 +41,9 @@ const vampire = [
     location: 'Auvergne, France',
     gender: 'm',
     victims: 324
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Louis de Pointe du Lac',
     dob: new Date(1766, 6, 4, 2, 1),
     hair_color: 'brown',
@@ -44,7 +52,9 @@ const vampire = [
     location: 'New Orleans, Louisiana, US',
     gender:'m',
     victims: 150
-  },{
+  })
+
+ db.vampires.insert({
     name:'Claudia',
     dob: new Date(1793, 2, 7, 8, 30),
     hair_color: 'blonde',
@@ -53,7 +63,9 @@ const vampire = [
     location: 'New Orleans, Louisiana, US',
     gender: 'f',
     victims: 290
-  },{
+  })
+
+ db.vampires.insert({
     name:'Armand',
     dob: new Date(1481, 6, 1, 10, 42),
     hair_color: 'red',
@@ -62,7 +74,9 @@ const vampire = [
     location: 'Kiev, Russia',
     gender: 'm',
     victims: 1045
-  },{
+  })
+
+ db.vampires.insert({
     name:'Santino',
     dob: new Date(1465, 6, 1, 10, 42),
     hair_color: 'brown',
@@ -71,7 +85,8 @@ const vampire = [
     location: 'Rome, Italy',
     gender: 'm',
     victims: 1103
-  },{
+  })
+ db.vampires.insert({
     name:'Akasha',
     dob: new Date(-8000, 6, 1, 10, 42),
     hair_color: 'brown',
@@ -81,7 +96,9 @@ const vampire = [
     gender: 'f',
     victims: 210234,
     title: 'Queen of the Damned'
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Edward Cullen',
     dob: new Date(1901, 6, 20, 0, 57),
     hair_color: 'brown',
@@ -98,7 +115,9 @@ const vampire = [
     location: 'Paris, France',
     gender: 'f',
     victims: 450
-  },{
+  })
+
+ db.vampires.insert({
     name: 'René Tremblay',
     dob: new Date(1922, 2, 8, 5, 3),
     hair_color: 'brown',
@@ -116,7 +135,9 @@ const vampire = [
     location: 'Ljubljana, Slovenia',
     gender: 'f',
     victims: 567
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Francis Frost',
     hair_color: 'black',
     eye_color: 'blue',
@@ -125,7 +146,9 @@ const vampire = [
     location: 'New York, New York, US',
     gender: 'm',
     victims: 112
-  },{
+  })
+
+ db.vampires.insert({
     name: 'Barnabas Spenser',
     hair_color: 'brown',
     eye_color: 'brown',
@@ -134,7 +157,7 @@ const vampire = [
     location: 'New York, New York, US',
     gender: 'm',
     title: 'Osiris of Sewer Rats'
-  }
-];
+  })
+//];
 
 //module.exports = mongoose.model('vampire', vampireSchema);

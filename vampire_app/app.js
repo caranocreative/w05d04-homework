@@ -67,16 +67,69 @@ mongoose.connection.on('disconnected', () => {
 //### Negative Selection
 
 /////////////////////////////////////////////////
+app.get('/vampires/:id', (req, res) => {
+   res.render('/vampire/show.ejs', {
+    vampire: Vampire[req.params.id] 
+  });
+});
+
 /////////////////////////////////////////////////
 // ## REPLACE
+// app.post('/vampire', (req, res) => {
+//   vampires.create(req.body, (err, createdVampire)=> {
+//     if(err){
+//       console.log(err)
+//       res.send(err);
+//     } else {
+//       console.log(createdVampire)
+//       res.redirect('/vampire');
+//     }
+//   });
+// });
+
+// app.get('/vampire/edit', (req, res) => {
+//     res.render('/views/edit.ejs');
+// });
+
+// app.get('/vampire/:id/edit', (req, res) => {
+//   vampires.findById(req.params.id, (err, foundVampire) => {
+//     res.render('/views/edit.ejs', {
+//       vampires: foundVampire,
+//       });
+//    });
+
+// });
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## UPDATE
-
+// Vampires.findByIdAndUpdate(req.params.id, req.body, (err, updatedVampire) => {
+//     if(err){
+//       res.send(err);
+//     } else {
+//       //chek to see if it is updating correctly
+//       console.log(updatedVampire, " check our model")
+//       res.redirect('/vampire');
+//     }
+//   });
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // ## REMOVE
+// app.delete('/vampire/:id', (req, res) => {
+//   Vampire.splice(req.params.index, 1);
+//   console.log(req.params.index, ' this is req.params');
+//   res.redirect('/vampire');
+// });
+
+// Vampires.findByIdAndRemove(req.params.id, (err, deletedVampire) => {
+// 	if(err){
+//       console.log(err, ' this is the error of delete');
+//       res.send(err);
+//     } else {
+//       console.log(deletedVampire, " the deleted vampire in the delete route");
+//       res.redirect('/vampire');
+//     }
+// });
 
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////

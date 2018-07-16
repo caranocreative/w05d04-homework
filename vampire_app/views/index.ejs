@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vampires Index page</title>
+</head>
+<body>
+	<h1>Vampires Index Page</h1>
+
+		<ul>
+              <li>                    
+                  <form method="POST" action="/vampire/<%=vampires.id%>?_method=DELETE">
+                    <input type="submit" value="delete">
+                    
+                  </form>
+
+                  <a href="/vampire/<%=vampires.id%>/edit">Edit</a>
+
+               </li>
+            <% } %>
+        </ul>
+        
+    
+        <nav>
+            <a href="/vampire/edit">Create a New Vampire</a>
+        </nav>
+
+
+
+
+</body>
+</html>

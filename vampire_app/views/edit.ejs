@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vampire Edit page</title>
+</head>
+<body>
+	<h1>Vampire Edit page</h1>
+
+		<form method="POST" action="/vampires/<%=vampires.id%>?_method=PUT">
+			Name: <input type="text" name="name" value="<%=vampires.name%>">
+			hair_color: <input type="text" name="hair_color" value="<%=vampires.hair_color%>">
+			eye_color: <input type="text" name="eye_color" value="<%=vampires.eye_color%>"/>
+			dob: <input type="date" name="dob" value="<%=vampires.dob%>"/>
+			loves: <input type="text" name="loves" value="<%=vampires.loves%>"/>
+			location: <input type="text" name="location" value="<%=vampires.location%>"/>
+			gender: <input type="text" name="gender" value="<%=vampires.gender%>">/>
+			victims: <input type="number" name="victims" value="<%=vampires.victims%>"/>
+
+		<br/>
+		
+		<input type="submit" name="Submit Changes"/>
+
+
+		</form>
+
+		<form action="/vampires" method="POST">
+		   Name: <input type="text" name="name" value="<%=vampires.name%>">
+			hair_color: <input type="text" name="hair_color" value="<%=vampires.hair_color%>">
+			eye_color: <input type="text" name="eye_color" value="<%=vampires.eye_color%>"/>
+			dob: <input type="date" name="dob" value="<%=vampires.dob%>"/>
+			loves: <input type="text" name="loves" value="<%=vampires.loves%>"/>
+			location: <input type="text" name="location" value="<%=vampires.location%>"/>
+			gender: <input type="text" name="gender" value="<%=vampires.gender%>">/>
+			victims: <input type="number" name="victims" value="<%=vampires.victims%>"/>
+		   
+		   <br/>
+		   
+		   <input type="submit">
+		 
+		 </form>
+
+
+</body>
+</html>
